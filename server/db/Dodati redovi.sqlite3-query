@@ -1,0 +1,6 @@
+-- database: ./freaky.db
+
+SELECT * FROM products;
+ALTER TABLE products ADD COLUMN description TEXT;
+ALTER TABLE products ADD COLUMN slug TEXT UNIQUE;
+ALTER TABLE products ADD COLUMN slug TEXT;

@@ -1,0 +1,29 @@
+-- database: ./Populera-produkter.db
+ALTER TABLE products ADD COLUMN description TEXT;
+ALTER TABLE products ADD COLUMN slug TEXT UNIQUE;
+SELECT * FROM "table-name";
+CREATE TABLE products (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    image_url TEXT NOT NULL,
+    namn TEXT NOT NULL,
+    price TEXT NOT NULL,
+    brand TEXT NOT NULL,
+    sku TEXT NOT NULL UNIQUE
+);
+INSERT INTO products (image_url,namn, price, brand, sku)
+VALUES
+ ('/images/400x400.svg', 'Svart T-Shirt', '199', 'Levis', 'SVA001'),
+('/images/400x400.svg', 'Svart T-Shirt', '199', 'Levis', 'SVA002'),
+('/images/400x400.svg', 'Svart T-Shirt', '199', 'Levis', 'SVA003'),
+('/images/400x400.svg', 'Grå T-Shirt', '199', 'Levis', 'GRY004'),
+('/images/400x400.svg', 'Gul T-Shirt', '199', 'Levis', 'GUL005'),
+('/images/400x400.svg', 'Blå T-Shirt', '199', 'Levis', 'BLÅ006'),
+('/images/400x400.svg', 'Rosa T-Shirt', '199', 'Levis', 'ROS007'),
+('/images/400x400.svg', 'Brun T-Shirt', '199', 'Levis', 'BRU008');
+
+
+INSERT INTO products (namn, pris)
+SELECT name, price FROM produkter;
+
+INSERT INTO products (namn, price, brand) 
+VALUES
