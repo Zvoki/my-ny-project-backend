@@ -1,0 +1,5 @@
+
+node_modules/
+
+# Ignore node_modules in subfolders like server/node_modules
+node_modules/
