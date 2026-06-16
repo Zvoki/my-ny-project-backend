@@ -4,6 +4,8 @@ This is a full-stack application created as a student project and intended for p
 
 ## Live Demo
 
+https://my-ny-project-backend.onrender.com
+
 ## Technologies
 
 - **Frontend**: React 18 with Vite as the bundler, modern JavaScript, CSS

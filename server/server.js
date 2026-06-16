@@ -6,7 +6,7 @@ import adminRouter from "./routes/admin.js";
 import { initializeSlugs } from "./db/queries.js";
 import cors from "cors"
 
-const port = 8000;
+const port = process.env.PORT || 8000;
 const app = express();
 
 app.use(express.json());/*omogućava serveru da automatski čita JSON iz request 
