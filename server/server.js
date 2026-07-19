@@ -23,7 +23,7 @@ req.body = {
 */
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:3002'],
+  origin: ['http://localhost:3000', 'http://localhost:3002', 'http://my-ny-frontend.netlify.app'],
   credentials: true //Dozvoljavaš slanje kolačića / tokena (credentials: true)
 }));
 
