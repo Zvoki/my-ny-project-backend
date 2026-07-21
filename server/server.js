@@ -4,10 +4,16 @@ import productsRouter from "./routes/products.js";
 import searchRouter from "./routes/search.js";
 import adminRouter from "./routes/admin.js";
 import { initializeSlugs } from "./db/queries.js";
-import cors from "cors"
+import cors from "cors";
 
 const port = process.env.PORT || 8000;
 const app = express();
+const allowedOrigins = [
+  "http://localhost:3000",
+  "http://localhost:3002",
+  "https://my-ny-frontend.netlify.app",
+  "https://www.my-ny-frontend.netlify.app"
+];
 
 app.use(express.json());/*omogućava serveru da automatski čita JSON iz request 
 body‑ja(npr. POST /login sa { "email": "...", "password": "..." })
@@ -23,13 +29,24 @@ req.body = {
 */
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:3002', 'http://my-ny-frontend.netlify.app'],
-  credentials: true //Dozvoljavaš slanje kolačića / tokena (credentials: true)
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+      return;
+    }
+
+    callback(new Error("Not allowed by CORS"));
+  },
+  credentials: true
 }));
 
 // Serve static files iz public direktorija,Sve što staviš u 
 // public/ direktorijum biće dostupno kao statički fajlovi (slike, CSS, JS…).
 app.use(express.static('public'));
+
+app.get("/", (req, res) => {
+  res.json({ message: "Backend API is running" });
+});
 
 /*Inicijalizuj slugove pri startu servera. Ovo se izvršava jednom pri
  pokretanju servera.

@@ -4,7 +4,8 @@ This is a full-stack application created as a student project and intended for p
 
 ## Live Demo
 
-https://my-ny-project-backend.onrender.com
+Backend: https://backend-ryn4.onrender.com
+Frontend: https://my-ny-frontend.netlify.app
 
 ## Technologies
 
