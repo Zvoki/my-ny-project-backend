@@ -4,8 +4,8 @@ This is a full-stack application created as a student project and intended for p
 
 ## Live Demo
 
-Backend: https://backend-ryn4.onrender.com
-Frontend: https://my-ny-frontend.netlify.app
+ https://my-ny-frontend.netlify.app/
+ https://my-ny-project-backend.onrender.com/products/popular
 
 ## Technologies
 
@@ -24,22 +24,19 @@ Frontend: https://my-ny-frontend.netlify.app
 
 ## Project Structure
 
-client/        # React frontend
-   src/
-      components/...
-      pages/...
 server/        # Express backend
    controllers/
    routes/
    db/
+   server.js
 
 
 ## Running Locally
 
 1. Clone the repository and change into the project directory:
 
-   git clone <repo-url>
-   cd react-projekt
+   git clone repo-url
+   cd my-project-backend
 
 2. Start the backend server:
 
@@ -47,12 +44,7 @@ server/        # Express backend
    npm install
    npm start
 
-3. Open a new terminal and start the frontend:
-   cd client
-   npm install
-   npm run dev
-
-4. Visit [http://localhost:5173](http://localhost:5173) for the frontend and [http://localhost:3000](http://localhost:3000) for the API.
+3. Visit [http://localhost:8000](http://localhost:8000) for the API.
 
 ## Development Notes
 
@@ -63,4 +55,4 @@ server/        # Express backend
 
 It serves as an example of a simple full-stack application showcasing skills in React, Node/Express, and working with a database. It can be extended with additional functionality as needed.
 
-*(This README was created to explain the project as part of a portfolio for applying to an internship.)*
+This README was created to explain the project as part of a portfolio for applying to an internship.
