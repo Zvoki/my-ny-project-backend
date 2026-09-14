@@ -1,4 +1,4 @@
-// server/controllers/adminController.js
+// server/controllers/searchController.js
 import { searchProducts } from "../db/queries.js";
 
 export async function search(req, res) {
