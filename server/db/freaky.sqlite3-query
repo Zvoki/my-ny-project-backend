@@ -12,14 +12,14 @@ CREATE TABLE products (
 );
 INSERT INTO products (image_url,namn, price, brand, sku)
 VALUES
- ('/images/400x400.svg', 'Svart T-Shirt', '199', 'Levis', 'SVA001'),
-('/images/400x400.svg', 'Svart T-Shirt', '199', 'Levis', 'SVA002'),
-('/images/400x400.svg', 'Svart T-Shirt', '199', 'Levis', 'SVA003'),
-('/images/400x400.svg', 'Grå T-Shirt', '199', 'Levis', 'GRY004'),
-('/images/400x400.svg', 'Gul T-Shirt', '199', 'Levis', 'GUL005'),
-('/images/400x400.svg', 'Blå T-Shirt', '199', 'Levis', 'BLÅ006'),
-('/images/400x400.svg', 'Rosa T-Shirt', '199', 'Levis', 'ROS007'),
-('/images/400x400.svg', 'Brun T-Shirt', '199', 'Levis', 'BRU008');
+ ('/images/svart-t-shirt.webp', 'Svart T-Shirt', '199', 'Levis', 'SVA001'),
+('/images/svart-t-shirt.webp', 'Svart T-Shirt', '199', 'Levis', 'SVA002'),
+('/images/svart-t-shirt.webp', 'Svart T-Shirt', '199', 'Levis', 'SVA003'),
+('/images/gra-t-shirt.webp', 'Grå T-Shirt', '199', 'Levis', 'GRY004'),
+('/images/gul-t-shirt.webp', 'Gul T-Shirt', '199', 'Levis', 'GUL005'),
+('/images/bla-t-shirt.webp', 'Blå T-Shirt', '199', 'Levis', 'BLÅ006'),
+('/images/rosa-t-shirt.webp', 'Rosa T-Shirt', '199', 'Levis', 'ROS007'),
+('/images/brun-t-shirt.webp', 'Brun T-Shirt', '199', 'Levis', 'BRU008');
 
 
 INSERT INTO products (namn, pris)
